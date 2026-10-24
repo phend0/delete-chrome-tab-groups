@@ -1,8 +1,11 @@
+
 # delete-chrome-tab-groups
 
 Automation tools to bulk-delete saved tab groups from Google Chrome's **⋮ > Tab groups** menu on macOS and Windows.
 
 ## Background & Why This Exists
+
+I had hundreds of saved tab groups that had accrued over time. When I tried to find a way to delete them the only help or options I could find said that you had to delete them one by one. The closest thing that was available for bulk deletion were a couple chrome extensions I tried that ended up being almost as much work as deleting each tab individually. So I ended up making this tool with Antigravity to do what I needed it to do. This tool can close all your tab groups, or you can specify the number of tabs you want it to close. Google should have incorporated something in chrome that lets you do this, but until they do, I hope this helps.
 
 In Google Chrome, saved tab groups are synced across your devices via your Google Account. 
 - Chrome Extension APIs (`chrome.tabGroups`, `chrome.tabs`) **only** have access to active, open tab groups in the current window. They cannot access, query, or delete saved tab groups that are closed.
